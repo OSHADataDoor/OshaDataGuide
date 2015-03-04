@@ -1,0 +1,30 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_optional_info
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_optional_info <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_optional_info)
+str(osha_optional_info)
+
+# add in variable labels
+
+names(osha_optional_info)[1] <- "Activity NR"
+names(osha_optional_info)[2] <- "Opt Type"
+names(osha_optional_info)[3] <- "Opt ID"
+names(osha_optional_info)[4] <- "Opt Value"
+names(osha_optional_info)[5] <- "Opt Info ID"
+
+
+# verify labels and structure
+names(osha_optional_info)
+str(osha_optional_info)
+
+# no value labels for this file
+
+
+# end of code

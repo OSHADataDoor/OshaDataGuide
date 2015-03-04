@@ -1,0 +1,5 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+activity_nr              num            8              1              BEST9.         1307154        0              Activity NR
+prog_type                char           1              2              $CHAR1.        3              0              Program Type
+prog_value               char           25             3              $CHAR25.       951            0              Program Value
+TOTAL OBS      2010055

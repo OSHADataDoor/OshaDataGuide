@@ -1,0 +1,56 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_violation_event
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_violation_event <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_violation_event)
+str(osha_violation_event)
+
+# add in variable labels
+
+names(osha_violation_event)[1] <- "Activity NR"
+names(osha_violation_event)[2] <- "Citation ID"
+names(osha_violation_event)[3] <- "Penalty/FTA"
+names(osha_violation_event)[4] <- "Historical Event"
+names(osha_violation_event)[5] <- "Historical Event Date"
+names(osha_violation_event)[6] <- "Historical Penalty"
+names(osha_violation_event)[7] <- "Historical Abate Date"
+names(osha_violation_event)[8] <- "Historical Violation Type"
+names(osha_violation_event)[9] <- "Historical Inspection NR"
+
+
+# verify labels and structure
+names(osha_violation_event)
+str(osha_violation_event)
+
+# add in value labels
+
+# Field values for the Historical Event variable:
+
+#### Z=Issued
+#### P=Petition to Mod Abatement
+#### I=Informal Settlement
+#### A=Amendment
+#### W=Empr Withdrew
+#### D=Govt Dismissed
+#### L=State Settlement
+#### Y=State Decision
+#### F=Formal Settlement
+#### J=ALJ Decision
+#### R=Review Commission
+#### 1=State Lower Court
+#### 2=Appeals Court
+#### 3=Supreme Court
+
+
+# Field values for the Penalty FTA (failure to abate) variable:
+
+#### P=Penalty
+#### F=FTA
+
+# end of code

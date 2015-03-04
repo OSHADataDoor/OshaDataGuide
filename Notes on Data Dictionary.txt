@@ -1,0 +1,83 @@
+The data dictionary provided for these files can be located at the following link:
+http://ogesdw.dol.gov/views/data_catalogs.php
+
+
+Variables listed below are found in the corresponding Table but NOT in the Data Dictionary:
+
+Table_Name			Column_Name		Additional Information
+
+osha_accident			abstract_text		This variable is in other OSHA tables
+osha_accident			state_flag		This variable is in other OSHA tables
+
+osha_inspection			case_mod_year
+osha_inspection			close_case_year
+osha_inspection			close_conf_year
+osha_inspection			inspection_to_filter
+osha_inspection			open_year
+osha_inspection			osha_accident_indicator
+osha_inspection			violation_type_o
+osha_inspection			violation_type_r
+osha_inspection			violation_type_s
+osha_inspection			violation_type_u
+osha_inspection			violation_type_w
+
+Variables listed below are listed in the Dictionary but NOT in the corresponding Data Table:
+
+Table_Name			Column_Name		
+
+
+osha_accident			indstry_dim_id
+osha_accident			load_dt
+osha_accident			zip_dim_id
+
+osha_accident_abstract		indstry_dim_id
+osha_accident_abstract		load_dt
+osha_accident_abstract		zip_dim_id
+
+osha_accident_injury		indstry_dim_id
+osha_accident_injury		load_dt
+osha_accident_injury		zip_dim_id
+
+osha_inspection			indstry_dim_id
+osha_inspection			ld_dt
+osha_inspection			zip_dim_id
+
+osha_optional_info		indstry_dim_id
+osha_optional_info		load_dt
+osha_optional_info		upper_opt_type::text_
+osha_optional_info		upper_opt_value::text_
+osha_optional_info		zip_dim_id
+
+osha_related_activity		indstry_dim_id
+osha_related_activity		load_dt
+osha_related_activity		upper_rel_health::text_
+osha_related_activity		upper_rel_safety::text_
+osha_related_activity		upper_rel_type::text_
+osha_related_activity		zip_dim_id
+
+osha_strategic_codes		indstry_dim_id
+osha_strategic_codes		load_dt
+osha_strategic_codes		upper_prog_type::text_
+osha_strategic_codes		upper_prog_value::text_
+osha_strategic_codes		zip_dim_id
+
+osha_violation			indstry_dim_id
+osha_violation			load_dt
+osha_violation			zip_dim_id
+
+osha_violation_event		indstry_dim_id
+osha_violation_event		load_dt
+osha_violation_event		zip_dim_id
+
+osha_violation_gen_duty_std	indstry_dim_id
+osha_violation_gen_duty_std	load_dt
+osha_violation_gen_duty_std	zip_dim_id
+
+The Table below is listed in the Dictionary but there is no corresponding Data Table:
+
+Table_Name			Column_Name
+osha_deletes_blocks		activity_nr
+osha_deletes_blocks		del_blck_ind
+osha_deletes_blocks		load_dt
+osha_deletes_blocks		upper_del_blck_ind::text_
+

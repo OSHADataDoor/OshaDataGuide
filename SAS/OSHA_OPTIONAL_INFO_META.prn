@@ -1,0 +1,7 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+activity_nr              num            8              1              BEST9.         1271399        0              Activity NR
+opt_id                   num            8              3              BEST2.         23             0              Optional Information ID
+opt_info_id              char           28             5              $CHAR28.       0              1667315        Optional Information ID
+opt_type                 char           1              2              $CHAR1.        1              0              Optional Information Type
+opt_value                char           50             4              $CHAR50.       625117         42             Optional information value
+TOTAL OBS      1667315

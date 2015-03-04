@@ -1,0 +1,11 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+activity_nr              num            8              1              BEST9.         960351         0              Activity NR
+citation_id              char           7              2              $CHAR7.        5515           0              Citation ID
+hist_abate_date          num            8              7              YYMMDD10.      15116          72856          History Abate Date
+hist_date                num            8              5              YYMMDD10.      14321          0              History Event Date
+hist_event               char           1              4              $CHAR1.        20             2              History Event
+hist_insp_nr             num            8              9              BEST9.         8865           8034340        History Inspection NR
+hist_penalty             num            8              6              DOLLAR10.2     10231          2499314        History Penalty
+hist_vtype               char           1              8              $CHAR1.        5              70463          History Violation Type
+pen_fta                  char           1              3              $CHAR1.        2              0              Penalty/FTA
+TOTAL OBS      8081101

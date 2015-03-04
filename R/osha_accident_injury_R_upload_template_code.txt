@@ -1,0 +1,56 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_accident_injury
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+osha_accident_injury <- read.csv("<path/filename>")
+
+# open window to view, check structure
+View(osha_accident_injury)
+str(osha_accident_injury)
+
+# add in variable labels
+names(osha_accident_injury)[1] <- "Summary NR"
+names(osha_accident_injury)[2] <- "Related Inspection NR"
+names(osha_accident_injury)[3] <- "Age"
+names(osha_accident_injury)[4] <- "Sex"
+names(osha_accident_injury)[5] <- "Nature of Injury"
+names(osha_accident_injury)[6] <- "Part of Body"
+names(osha_accident_injury)[7] <- "Source of Injury"
+names(osha_accident_injury)[8] <- "Event Type"
+names(osha_accident_injury)[9] <- "Environmental Factor"
+names(osha_accident_injury)[10] <- "Human Factor"
+names(osha_accident_injury)[11] <- "Occupation Code"
+names(osha_accident_injury)[12] <- "Degree of Injury"
+names(osha_accident_injury)[13] <- "Task Assigned"
+names(osha_accident_injury)[14] <- "Hazardous Substance"
+names(osha_accident_injury)[15] <- "Construction Operation Code"
+names(osha_accident_injury)[16] <- "Construction Cause of Injury"
+names(osha_accident_injury)[17] <- "Construction Cause of Fatality"
+names(osha_accident_injury)[18] <- "Distance of Fall"
+names(osha_accident_injury)[19] <- "Height of Person"
+names(osha_accident_injury)[20] <- "Injury Line Number"
+
+# verify labels and structure
+names(osha_accident_injury)
+str(osha_accident_injury)
+
+# add in value labels
+
+# Degree of Injury: 1=Fatality. 2=Hospitalized injuries. 3=No Hospitalized injuries
+# Sex: M=Male. F=Female
+# Task Assigned: 1=Task regularly assigned. 2=Task not regularly assigned
+
+# important note: these appear to work in R Studio, but not in the command line version
+
+levels(osha_accident_injury$degree_of_inj) <- c("Fatality", "Hospitalized injuries", "No Hospitalized injuries")
+levels(osha_accident_injury$sex) <- c("Male", "Female")
+levels(osha_accident_injury$task_assigned) <- c("Task regularly assigned", "Task not regularly assigned")
+
+
+str(osha_accident_injury)
+
+
+
+
+# end of code

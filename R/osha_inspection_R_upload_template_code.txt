@@ -1,0 +1,80 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_inspection
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+osha_inspection <- read.csv("<path/filename>")
+
+# open window to view, check structure
+View(osha_inspection)
+str(osha_inspection)
+
+# add in variable labels
+names(osha_inspection)[1] <- "Activity NR"
+names(osha_inspection)[2] <- "Reporting ID"
+names(osha_inspection)[3] <- "State Flag"
+names(osha_inspection)[4] <- "Establishment Name"
+names(osha_inspection)[5] <- "Site Street Address"
+names(osha_inspection)[6] <- "Site City"
+names(osha_inspection)[7] <- "Site State"
+names(osha_inspection)[8] <- "Site Zip Code"
+names(osha_inspection)[9] <- "Owner Type"
+names(osha_inspection)[10] <- "Owner Code"
+names(osha_inspection)[11] <- "Advance Notice"
+names(osha_inspection)[12] <- "Safety/Health"
+names(osha_inspection)[13] <- "SIC"
+names(osha_inspection)[14] <- "NAICS Code"
+names(osha_inspection)[15] <- "Inspection Type"
+names(osha_inspection)[16] <- "Inspection Scope"
+names(osha_inspection)[17] <- "Why No Inspection"
+names(osha_inspection)[18] <- "Union Status"
+names(osha_inspection)[19] <- "Safety Manufacturing"
+names(osha_inspection)[20] <- "Safety Construction"
+names(osha_inspection)[21] <- "Safety Maritime"
+names(osha_inspection)[22] <- "Health Manufacturing"
+names(osha_inspection)[23] <- "Health Construction"
+names(osha_inspection)[24] <- "Health Maritime"
+names(osha_inspection)[25] <- "Migrant"
+names(osha_inspection)[26] <- "Mailing Street Address"
+names(osha_inspection)[27] <- "Mailing Address City"
+names(osha_inspection)[28] <- "Mailing Address State"
+names(osha_inspection)[29] <- "Mailing Address Zip Code"
+names(osha_inspection)[30] <- "Host Establishment Key"
+names(osha_inspection)[31] <- "Number of Employees"
+names(osha_inspection)[32] <- "Open Date"
+names(osha_inspection)[33] <- "Case Modification Date"
+names(osha_inspection)[34] <- "Closing Conference Date"
+names(osha_inspection)[35] <- "Case Closed Date"
+names(osha_inspection)[36] <- "Open Year"
+names(osha_inspection)[37] <- "Case Modification Year"
+names(osha_inspection)[38] <- "Closing Conference Year"
+names(osha_inspection)[39] <- "Case Closed Year"
+names(osha_inspection)[40] <- "OSHA accident indicator"
+names(osha_inspection)[41] <- "violation_type_s"
+names(osha_inspection)[42] <- "violation_type_o"
+names(osha_inspection)[43] <- "violation_type_r" 
+names(osha_inspection)[44] <- "violation_type_u"
+names(osha_inspection)[45] <- "violation_type_w"
+names(osha_inspection)[46] <- "inspection_to_filter" 
+
+# verify labels and structure
+names(osha_inspection)
+str(osha_inspection)
+
+# value labels
+# Note: There is not generic code to provide value labels for non-integer categorical variables.  
+# The codes are provided for clarity, the user can use these to interpret the existing variables
+# or to create named variables.
+
+# Inspection Scope: A=Complete.B=Partial.C=Records.D=NoInspection
+# Inspection Type: A=Accident. B=Complaint. C=Referral. D=Monitoring. E=Variance. 
+#                  F=FollowUp. G=Unprog Rel. H=Planned. I=Prog Related. J=Unprog Other. 
+#                   K=Prog Other. L=Other-L
+# Owner Type: A=Private. B=LocalGovt. C=StateGovt. D=Federal
+# Safety/Health:  S=Safety. H=Health
+# Why No Inspection: A=No Insp/Not Found  B=No Insp/Out of Business   C=No Insp/Process Inactive.
+#                    D=No Insp/10 or Fewer Empe   E=No Insp/Denied Entry   F=No Insp/SIC not on PG.
+#                    G=No Insp/Exempt/Voluntary   H=No Insp/NonExempt Consult   I=No Insp/Other
+
+
+# end of code

@@ -1,0 +1,84 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_violation
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_violation <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_violation)
+str(osha_violation)
+
+# add in variable labels
+
+names(osha_violation)[1] <- "Activity NR"
+names(osha_violation)[2] <- "Citation Id"
+names(osha_violation)[3] <- "Delete Flag"
+names(osha_violation)[4] <- "Standard"
+names(osha_violation)[5] <- "Violation Type"
+names(osha_violation)[6] <- "Issuance Date"
+names(osha_violation)[7] <- "Abate Date"
+names(osha_violation)[8] <- "Abate Complete"
+names(osha_violation)[9] <- "Current Penalty"
+names(osha_violation)[10] <- "Initial Penalty"
+names(osha_violation)[11] <- "Contest Date"
+names(osha_violation)[12] <- "Final Order Date"
+names(osha_violation)[13] <- "Instances"
+names(osha_violation)[14] <- "Exposed"
+names(osha_violation)[15] <- "REC"
+names(osha_violation)[16] <- "Gravity"
+names(osha_violation)[17] <- "Emphasis"
+names(osha_violation)[18] <- "Hazard Category"
+names(osha_violation)[19] <- "FTA Inspection NR"
+names(osha_violation)[20] <- "FTA Issuance Date"
+names(osha_violation)[21] <- "FTA Current Penalty"
+names(osha_violation)[22] <- "FTA Contest Date"
+names(osha_violation)[23] <- "FTA Final Order Date"
+names(osha_violation)[24] <- "Hazardous Substance 1"
+names(osha_violation)[25] <- "Hazardous Substance 2"
+names(osha_violation)[26] <- "Hazardous Substance 3"
+names(osha_violation)[27] <- "Hazardous Substance 4"
+names(osha_violation)[28] <- "Hazardous Substance 5"
+
+
+# verify labels and structure
+names(osha_violation)
+str(osha_violation)
+
+# add in value labels
+
+# Field values for the Abate Complete variable:
+
+#### Q=Quick Fix
+#### X=Abatement Completed
+#### I=Corrected During Inspection
+#### E=Not Completed - Employer out of business
+#### W=Not Changed - Worksite changed
+#### S=Not Completed - Solicitor advised
+#### A=Not Completed - AD discretion
+
+
+# Field values for the Delete Flag variable:
+
+#### D=deleted
+
+# Field values for the REC variable:
+
+#### A=Accident
+#### C=Complaint
+#### I=Imminent Danger
+#### R=Referral
+#### V=Variance
+
+# Field values for the Violation type variable:
+
+#### S=Serious
+#### W=Willful
+#### R=Repeat
+#### O=Other
+
+# Note: insert link to lookup table for hazardous substance coding
+
+# end of code

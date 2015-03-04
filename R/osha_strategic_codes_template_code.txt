@@ -1,0 +1,39 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_strategic_codes
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_strategic_codes <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_strategic_codes)
+str(osha_strategic_codes)
+
+# add in variable labels
+
+names(osha_strategic_codes)[1] <- "Activity NR"
+names(osha_strategic_codes)[2] <- "Program Type"
+names(osha_strategic_codes)[3] <- "Program Value"
+
+
+# verify labels and structure
+names(osha_strategic_codes)
+str(osha_strategic_codes)
+
+# add in value labels
+
+# Field values for the Program Type variable:
+
+#### N=NEP (National Emphasis Program)
+#### L=LEP (Local Emphasis Program)
+#### S=Strategic Plan Code
+
+# some information on OSHA National Emphasis Programs can be found here: 
+
+# some information on OSHA Local Emphasis Programs can be found here: 
+
+
+
+# end of code

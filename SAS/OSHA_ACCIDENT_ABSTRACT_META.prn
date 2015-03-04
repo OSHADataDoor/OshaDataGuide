@@ -1,0 +1,5 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+abstract_text            char           80             3              $CHAR80.       778264         0              Abstract text
+line_nr                  num            4              2              BEST4.         54             0              Line NR
+summary_nr               num            8              1              BEST9.         105479         0              Summary NR
+TOTAL OBS      802513

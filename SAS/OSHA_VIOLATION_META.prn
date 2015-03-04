@@ -1,0 +1,30 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+abate_complete           char           1              8              $CHAR1.        8              224119         Abate Complete
+abate_date               num            8              7              YYMMDD10.      15631          3893           Abate Date
+activity_nr              num            8              1              BEST9.         2497648        0              Activity NR
+citation_id              char           7              2              $CHAR7.        6853           0              Citation ID
+contest_date             num            8              11             YYMMDD10.      9487           9958382        Contested Date
+current_penalty          num            8              9              BEST10.        9615           6854543        Current Penalty
+delete_flag              char           1              3              $CHAR1.        1              10912793       Delete Flag
+emphasis                 char           1              17             $CHAR1.        1              11259780       Emphasis
+final_order_date         num            8              12             YYMMDD10.      12122          10157061       Final Order Date
+fta_contest_date         num            8              22             YYMMDD10.      2474           11257650       FTA Contested Date
+fta_final_order_date     num            8              23             YYMMDD10.      2501           11257795       FTA Final Order Date
+fta_insp_nr              num            8              19             BEST9.         20664          11208884       FTA Inspection NR
+fta_issuance_date        num            8              20             YYMMDD10.      8641           11198516       FTA Issuance Date
+fta_penalty              num            8              21             BEST10.        2119           11227599       FTA Current Penalty
+gravity                  num            8              16             BEST2.         19             6468930        Gravity
+hazcat                   char           10             18             $CHAR10.       30             11220315       Hazard Category
+hazsub1                  char           4              24             $CHAR4.        960            11005167       Hazardous Substance 1
+hazsub2                  char           4              25             $CHAR4.        829            11208340       Hazardous Substance 2
+hazsub3                  char           4              26             $CHAR4.        679            11240377       Hazardous Substance 3
+hazsub4                  char           4              27             $CHAR4.        585            11252412       Hazardous Substance 4
+hazsub5                  char           4              28             $CHAR4.        478            11259067       Hazardous Substance 5
+initial_penalty          num            8              10             BEST10.        3212           6558763        Initial Penalty
+issuance_date            num            8              6              YYMMDD10.      13609          0              Issuance Date
+nr_exposed               num            8              14             BEST5.         1331           2672666        Number Exposed
+nr_instances             num            8              13             BEST5.         615            529            Number of Instances
+rec                      char           1              15             $CHAR1.        10             10006148       Rec
+standard                 char           22             4              $CHAR22.       102110         0              Standard
+viol_type                char           1              5              $CHAR1.        5              1              Violation Type
+TOTAL OBS      11267602

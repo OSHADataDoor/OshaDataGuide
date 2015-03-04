@@ -1,0 +1,39 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_accident
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_accident <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_accident)
+str(osha_accident)
+
+# add in variable labels
+
+names(osha_accident)[1] <- "Summary NR"
+names(osha_accident)[2] <- "Report ID"
+names(osha_accident)[3] <- "Event Date"
+names(osha_accident)[4] <- "Event Time"
+names(osha_accident)[5] <- "Event Description"
+names(osha_accident)[6] <- "Event Keyword"
+names(osha_accident)[7] <- "Construction End Use"
+names(osha_accident)[8] <- "Stories in Building"
+names(osha_accident)[9] <- "Non Building Height"
+names(osha_accident)[10] <- "Project Cost"
+names(osha_accident)[11] <- "Project Type"
+names(osha_accident)[12] <- "SIC List"
+names(osha_accident)[13] <- "Fatality"
+
+
+# verify labels and structure
+names(osha_accident)
+str(osha_accident)
+
+# add in value labels
+# Note: there are no variables that need value labels in this table
+
+
+# end of code

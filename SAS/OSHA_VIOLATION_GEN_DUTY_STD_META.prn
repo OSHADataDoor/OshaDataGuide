@@ -1,0 +1,6 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+activity_nr              num            8              1              BEST9.         39643          0              Activity NR
+citation_id              char           7              2              $CHAR7.        1274           0              Citation ID
+line_nr                  num            6              3              BEST6.         3144           0              Line NR
+line_text                char           80             4              $CHAR80.       635942         1              Line Text
+TOTAL OBS      1293174

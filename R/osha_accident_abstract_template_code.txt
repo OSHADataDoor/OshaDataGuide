@@ -1,0 +1,29 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_accident_abstract
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_accident_abstract <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_accident_abstract)
+str(osha_accident_abstract)
+
+# add in variable labels
+
+names(osha_accident_abstract)[1] <- "Summary NR"
+names(osha_accident_abstract)[2] <- "Comment Line Number"
+names(osha_accident_abstract)[3] <- "Abstract text"
+
+
+# verify labels and structure
+names(osha_accident_abstract)
+str(osha_accident_abstract)
+
+# add in value labels
+# Note: there are no variables that need value labels in this table
+
+
+# end of code

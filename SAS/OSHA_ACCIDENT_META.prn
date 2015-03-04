@@ -1,0 +1,17 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+abstract_text            char           1              15             $CHAR1.        0              105483         Abstract text
+build_stories            num            8              8              BEST4.         75             89823          Stories in Building
+const_end_use            char           1              7              $CHAR1.        17             82662          Construction End Use
+event_date               num            8              3              DATETIME18.    79415          0              Event Date
+event_desc               char           60             5              $CHAR60.       82807          1              Event Description
+event_keyword            char           200            6              $CHAR200.      101066         135            Event Keyword
+event_time               num            8              4              BEST8.         0              105483         Event Time
+fatality                 char           1              13             $CHAR1.        1              56754          Fatality
+nonbuild_ht              num            8              9              BEST4.         241            94658          Non Building Height
+project_cost             char           1              10             $CHAR1.        7              82715          Project Cost
+project_type             char           1              11             $CHAR1.        5              82653          Project Type
+report_id                num            8              2              BEST7.         276            0              Report ID
+sic_list                 char           40             12             $CHAR40.       2873           12             SIC List
+state_flag               char           1              14             $CHAR1.        0              105483         State Flag
+summary_nr               num            8              1              BEST9.         105483         0              Summary NR
+TOTAL OBS      105483

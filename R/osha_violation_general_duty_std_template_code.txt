@@ -1,0 +1,33 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_violation_gen_duty_std
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_violation_gen_duty_std <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_violation_gen_duty_std)
+str(osha_violation_gen_duty_std)
+
+# add in variable labels
+
+
+names(osha_violation_gen_duty_std)[1] <- "Activity NR"
+names(osha_violation_gen_duty_std)[2] <- "Citation ID"
+names(osha_violation_gen_duty_std)[3] <- "Line NR"
+names(osha_violation_gen_duty_std)[4] <- "Line Text"
+
+
+
+
+# verify labels and structure
+names(osha_violation_gen_duty_std)
+str(osha_violation_gen_duty_std)
+
+
+
+# There are no value labels necessary
+
+# end of code

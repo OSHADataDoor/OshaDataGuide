@@ -1,0 +1,22 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+age                      num            8              3              BEST2.         1              0              Age
+const_op                 num            8              15             BEST2.         72             0              Construction Operation Code
+const_op_cause           num            8              16             BEST2.         72             0              Construction Cause of Injury
+degree_of_inj            num            8              12             BEST1.         4              0              Degree of Injury
+event_type               num            8              8              BEST2.         15             0              Event Type
+evn_factor               num            8              9              BEST2.         19             0              Environmental Factor
+fall_distance            num            8              18             BEST4.         175            121930         Distance of Fall
+fall_ht                  num            8              19             BEST4.         178            121930         Height of Person
+fat_cause                num            8              17             BEST2.         31             0              Construction Cause of Fatality
+hazsub                   char           4              14             $CHAR4.        422            114574         Hazardous Substance
+hum_factor               num            8              10             BEST2.         21             0              Human Factor
+injury_line_nr           num            8              20             BEST3.         173            0              Injury Line Number
+nature_of_inj            num            8              5              BEST2.         23             0              Nature of Injury
+occ_code                 num            8              11             BEST3.         481            0              Occupation Code
+part_of_body             num            8              6              BEST2.         32             0              Part of Body
+rel_insp_nr              num            8              2              BEST9.         109944         0              Related Inspection NR
+sex                      char           1              4              $CHAR1.        0              132242         Sex
+src_of_injury            num            8              7              BEST2.         49             0              Source of Injury
+summary_nr               num            8              1              BEST9.         105479         0              Summary NR
+task_assigned            num            8              13             BEST1.         3              0              Task Assigned
+TOTAL OBS      132242

@@ -1,0 +1,48 @@
+# 2/10/2015 CEOAT script to upload OSHA Public use file: osha_related_activity
+
+# !! Be sure to place the actual PATH and FILENAME for your file in the statement immediately below to load the file.
+
+# read in file
+
+osha_related_activity <- read.csv("<path/filename>")
+
+# open window to view, check structure
+
+view(osha_related_activity)
+str(osha_related_activity)
+
+# add in variable labels
+
+names(osha_related_activity)[1] <- "Activity NR"
+names(osha_related_activity)[2] <- "Related Safety"
+names(osha_related_activity)[3] <- "Related Activity NR"
+names(osha_related_activity)[4] <- "Related Activity Safety"
+names(osha_related_activity)[5] <- "Related Activitiy Health"
+
+# verify labels and structure
+names(osha_related_activity)
+str(osha_related_activity)
+
+# value labels for three variables within this file
+
+
+# Field values for the Related Activity Health variable:
+
+#### X=Yes
+#### blank=No
+
+# Field values for the Related Activity Safety variable:
+
+#### X=Yes
+#### blank=No
+
+# Field values for the Related Activity Type variable:
+
+#### C=Complaint
+#### I=Inspection
+#### R=Referral
+#### A=Accident
+
+
+
+# end of code

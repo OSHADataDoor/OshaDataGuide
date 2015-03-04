@@ -1,0 +1,48 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+activity_nr              num            8              1              BEST9.         4326966        0              Activity NR
+adv_notice               char           4              11             $CHAR4.        3              871364         Advance Notice
+case_mod_date            num            8              33             YYMMDD10.      2874           2628158        Case Modification Date
+case_mod_year            num            8              37             BEST4.         11             2628158
+close_case_date          num            8              35             YYMMDD10.      15161          115044         Case Closed Date
+close_case_year          num            8              39             BEST4.         46             115044
+close_conf_date          num            8              34             YYMMDD10.      15047          62939          Closing Conference Date
+close_conf_year          num            8              38             BEST4.         47             62939
+estab_name               char           100            4              $CHAR100.      2154395        0              Establishment Name
+health_const             char           1              23             $CHAR1.        1              4275122        Health Construction
+health_manuf             char           1              22             $CHAR1.        1              4099747        Health Manufacturing
+health_marit             char           1              24             $CHAR1.        1              4323111        Health Maritime
+host_est_key             char           18             30             $CHAR18.       1538153        2152357        Host Establishment Key
+insp_scope               char           6              16             $CHAR6.        7              0              Inspection Scope
+insp_type                char           6              15             $CHAR6.        15             13             Inspection Type
+inspection_to_filter     char           1              46             $CHAR1.        0              4326966
+mail_city                char           30             27             $CHAR30.       42016          1849734        Mailing Address City
+mail_state               char           2              28             $CHAR2.        105            1850728        Mailing Address State
+mail_street              char           110            26             $CHAR110.      1175090        1848656        Mailing Street Address
+mail_zip                 num            8              29             BEST5.         43891          608            Mailing Address Zip Code
+migrant                  char           1              25             $CHAR1.        1              4297924        Migrant
+naics_code               char           6              14             $CHAR6.        1273           727            NAICS Code
+nr_in_estab              num            8              31             BEST5.         5305           237060         Number of Employees
+open_date                num            8              32             YYMMDD10.      14974          13             Open Date
+open_year                num            8              36             BEST4.         45             13
+osha_accident_indicator  char           1              40             $CHAR1.        1              4217215
+owner_code               num            8              10             BEST5.         319            133616         Owner Code
+owner_type               char           5              9              $CHAR5.        17             875689         Owner Type
+reporting_id             num            8              2              BEST7.         317            0              Reporting ID
+safety_const             char           1              20             $CHAR1.        2              2910993        Safety Construction
+safety_hlth              char           8              12             $CHAR8.        10             0              Safety/Health
+safety_manuf             char           1              19             $CHAR1.        3              3544718        Safety Manufacturing
+safety_marit             char           1              21             $CHAR1.        1              4289325        Safety Maritime
+sic_code                 char           8              13             $CHAR8.        1448           138392         SIC
+site_address             char           142            5              $CHAR142.      2286638        5369           Site Street Address
+site_city                char           30             6              $CHAR30.       53251          7375           Site City
+site_state               char           18             7              $CHAR18.       74             135            Site State
+site_zip                 char           8              8              $CHAR8.        48905          614            Site Zip Code
+state_flag               char           1              3              $CHAR1.        0              4326966        State Flag
+union_status             char           1              18             $CHAR1.        4              163831         Union Status
+violation_type_o         char           1              42             $CHAR1.        2              1750771
+violation_type_r         char           1              43             $CHAR1.        2              1750771
+violation_type_s         char           1              41             $CHAR1.        2              1750771
+violation_type_u         char           1              44             $CHAR1.        2              1750771
+violation_type_w         char           1              45             $CHAR1.        2              1750771
+why_no_insp              char           1              17             $CHAR1.        10             3877478        Why No Inspection
+TOTAL OBS      4326966

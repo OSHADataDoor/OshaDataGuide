@@ -1,0 +1,7 @@
+Variable Name            Type           Length         Col Num        Format         Levels         #Missing       Label
+activity_nr              num            8              1              BEST9.         1484236        0              Activity NR
+rel_act_nr               num            8              3              BEST9.         1290038        0              Related Activity NR
+rel_health               char           1              5              $CHAR1.        1              1178593        Related Activitiy Health
+rel_safety               char           1              4              $CHAR1.        1              920401         Related Activity Safety
+rel_type                 char           1              2              $CHAR1.        5              130            Related Activity Type
+TOTAL OBS      1624454
